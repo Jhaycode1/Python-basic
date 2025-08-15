@@ -1,0 +1,57 @@
+#Create variables for your name, age, and favorite food. Print them in a single sentence.
+#Swap the values of two variables without using a third variable.
+
+name ="Balogun Ajibola"
+age= 25
+favourite_food= ("Yam and Egg")
+
+sentence= print(f"My name is {name}, I'm {age} and my favourite food is {favourite_food}")
+
+sentences= print(f"My name is {name}, I am {favourite_food} and I love {age}")
+
+#swapping the variables 
+
+x= favourite_food
+y = name 
+
+x, y = y, x
+print(x,y)
+print(y,x)
+yes= print(f"My name is {x} and I love {y}")
+yees= print(f"My name is {y} and I love {x}")
+
+"""
+Create a list of 5 fruits and print the first, middle, and last fruit.
+
+Add a new fruit to the end and remove the second fruit.
+
+
+
+3. Dictionaries
+
+Create a dictionary to store details about a car (brand, model, year).
+
+Update the year to the current year.
+"""
+fruit = ["Apple", "Orange", "Banana", "Tangerine", "Pear"]
+#fruits =list("Apple", "Orange", "Banana", "Tangerine", "Pear")
+print(fruit)
+print(fruit [0])
+print(fruit[2])
+print(fruit[4])
+#print(fruit.append("Maize"))
+fruit.remove("Banana") 
+print(fruit.reverse())
+print(fruit.insert(4, "Today"))
+print(fruit)
+
+#Dictionaries
+
+car={"Name": "Toyota", "Model" : "Camry", "Year": "2050" }
+print(car)
+print(car.keys())
+print(car.values())
+print(car.items())
+#print(f"The name of my car is {Name}, it's a {Model} model, from {Year}")
+(car.update({"Year": "2025"}))
+print(car)
